@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule a Call</title>
+
+    <link rel="stylesheet" href="schedule.css">
+</head>
+
+<body>
+
+    <div class="booking-container">
+
+        <!-- Booking Header -->
+        <header class="booking-header">
+
+            <div class="profile">
+                <div class="photo">AM</div>
+
+                <div>
+                    <h2>Book a 1:1 Strategy Call</h2>
+                    <h3>with Alex Morgan</h3>
+
+                    <p>🕒 30 min &nbsp; | &nbsp; 💻 Video Call</p>
+                </div>
+            </div>
+
+            <button class="close-btn">×</button>
+
+        </header>
+
+
+        <!-- Step 1 -->
+        <section class="booking-section">
+
+            <h3>Step 1: Select Date & Time</h3>
+
+            <div class="booking-content">
+
+                <!-- Calendar -->
+                <div class="calendar">
+
+                    <div class="calendar-header">
+
+                        <button id="prev">‹</button>
+
+                        <h3 id="month-year"></h3>
+
+                        <button id="next">›</button>
+
+                    </div>
+
+                    <div class="calendar-days">
+                        <span>Sun</span>
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                    </div>
+
+                    <div class="calendar-dates" id="calendar-dates">
+                    </div>
+
+                </div>
+
+
+                <!-- Available Times -->
+                <div class="time-container">
+
+                    <h3>Available Times</h3>
+
+                    <div class="time-slots" id="time-slots">
+
+                        <p>Select a date to see available times.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Step 2 -->
+        <section class="details-section">
+
+            <h3>Step 2: Your Details</h3>
+
+            <form id="booking-form">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <textarea
+                    placeholder="Tell us briefly about your project"
+                ></textarea>
+
+                <button type="submit">
+                    Confirm Booking
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+
+    <script src="schedule.js"></script>
+
+</body>
+</html>
